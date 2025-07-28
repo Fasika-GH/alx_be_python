@@ -1,7 +1,7 @@
 def perform_operation(num1: float, num2: float, operation: str):
-    # num1 = float(input("Enter the first number: "))
-    # num2 = float(input("Enter the second number: "))
-    # operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
 
     addition = num1 + num2
     subtraction = num1 - num2
@@ -16,7 +16,7 @@ def perform_operation(num1: float, num2: float, operation: str):
         print("The result is: ", multiplication)
     elif operation == "divide" :
         print("The result is: ", division)
-    elif operation == "divide" and num2 == 0:
+    elif num2 == 0 and operation == "divide":
         print("The result is not defined")
     else:
         print ("Input is incorrect.")
