@@ -12,7 +12,7 @@ def perform_operation(num1, num2, operation):
     elif operation == "multiply":
         return num1 * num2
     elif operation == "divide" :
-        return num1/num2
+        print("The result is: ", division)
     elif operation == "divide" and num2 == 0:
         print("The result is not defined")
     else:
