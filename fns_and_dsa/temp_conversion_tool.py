@@ -16,3 +16,6 @@ elif temp_unit == "c":
         converted_temp_fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
         print(celsius, " °C is ", converted_temp_fahrenheit, "°F")
     convert_to_fahrenheit(celsius)
+
+elif temp_input.isalpha() :
+    print("Invalid temperature. Please enter a numeric value.")
