@@ -8,11 +8,11 @@ celsius = temp_input
 if temp_unit == "f":
     def convert_to_celsius(fahrenheit):
         converted_temp_celsius = (fahrenheit-32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-        print(converted_temp_celsius, "° C")
+        print(fahrenheit, " °F is ", converted_temp_celsius, "°C")
     convert_to_celsius(fahrenheit)
 
 elif temp_unit == "c":
     def convert_to_fahrenheit(celsius):
         converted_temp_fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
-        print(converted_temp_fahrenheit, "° F")
+        print(celsius, " °C is ", converted_temp_fahrenheit, "°F")
     convert_to_fahrenheit(celsius)
